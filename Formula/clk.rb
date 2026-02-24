@@ -1,0 +1,18 @@
+class Clk < Formula
+  desc "Clock in & out of work, tracking minutes spent per day"
+  homepage "https://github.com/poiurewq/scripts"
+  url "https://github.com/poiurewq/scripts/archive/refs/tags/clk-v0.2.0.tar.gz"
+  sha256 "39b3e6c2005cad7b2f67c9a2b63810ba88871a7eef0ccf5b3cceca04febd0738"
+  license "MIT"
+
+  depends_on "bash"
+
+  def install
+    bin.install "clk/clk"
+    man1.install "clk/clk.1"
+  end
+
+  test do
+    assert_match "clock in & out of work", shell_output("#{bin}/clk help")
+  end
+end
