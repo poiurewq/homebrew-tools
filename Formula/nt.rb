@@ -9,6 +9,7 @@ class Nt < Formula
 
   def install
     bin.install "nt/nt"
+    man1.install "nt/nt.1"
   end
 
   test do
