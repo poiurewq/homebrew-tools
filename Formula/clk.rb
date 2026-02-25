@@ -1,8 +1,8 @@
 class Clk < Formula
   desc "Clock in & out of work, tracking minutes spent per day"
   homepage "https://github.com/poiurewq/scripts"
-  url "https://github.com/poiurewq/scripts/archive/refs/tags/clk-v0.2.0.tar.gz"
-  sha256 "39b3e6c2005cad7b2f67c9a2b63810ba88871a7eef0ccf5b3cceca04febd0738"
+  url "https://github.com/poiurewq/scripts/archive/refs/tags/clk-v0.2.2.tar.gz"
+  sha256 "a0599b0e0004f4b165802b96e5795464b3de27d47d89146a6c017135b38416bc"
   license "MIT"
 
   depends_on "bash"
